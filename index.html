@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>COSC 307 HomePage</title>
+</head>
+<body>
+    <nav>
+        <h1 class="logo">COSC 307</h1>
+        <div class="nav-links">
+            <a href="#">Courses</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+        </div>
+        <button class="sign-up">Sign Up</button>
+    </nav>
+
+    <section class="intro">
+        <h1 class="heading">Welcome to COSC 307</h1>
+        <p class="description">
+            Welcome to our Web Application Development Course website! Embark on a transformative learning journey where aspiring developers dive into the dynamic world of web applications. Our comprehensive course blends theory with hands-on projects, covering HTML, CSS, JavaScript, and modern frameworks like React and Node.js. Guided by industry experts, participants gain proficiency in building responsive, interactive, and scalable web applications. Explore real-world case studies, collaborate on group projects, and receive personalized feedback to elevate your coding skills. Whether you're a beginner or seeking advanced techniques, our course empowers you to craft immersive web experiences. Start coding your future today!
+        </p>
+    </section>
+
+    <section class="timetable">
+        <h2>Examinations Timetable</h2>
+        <table>
+            <thead>
+                <td>Date</td>
+                <td>Course Code</td>
+                <td>Time</td>
+                <td>Venue</td>
+            </thead>
+            <tr>
+                <td>8/01/2024</td>
+                <td>COSC307</td>
+                <td>9AM-11AM</td>
+                <td>Sokoto Center</td>
+            </tr>
+            <tr>
+                <td>10/01/2024</td>
+                <td>COSC403</td>
+                <td>2PM-5PM</td>
+                <td>Sokoto Center</td>
+            </tr>
+            <tr>
+                <td>12/01/2024</td>
+                <td>COSC405</td>
+                <td>9AM-11AM</td>
+                <td>Sokoto Center</td>
+            </tr>
+            <tr>
+                <td>15/01/2024</td>
+                <td>COSC407</td>
+                <td>9AM-11AM</td>
+                <td>Sokoto Center</td>
+            </tr>
+            <tr>
+                <td>18/01/2024</td>
+                <td>COSC411</td>
+                <td>2PM-5PM</td>
+                <td>Sokoto Center</td>
+            </tr>
+        </table>
+    </section>
+
+    <form>
+        <h2>Fill in details to book examination</h2>
+        <fieldset>
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name" placeholder="Enter your first name">
+        </fieldset>
+        <fieldset>
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name" placeholder="Enter your last name">
+        </fieldset>
+        <fieldset>
+            <label for="reg_number">Registration Number</label>
+            <input type="text" name="reg_number" id="reg_number" placeholder="Enter your registration number">
+        </fieldset>
+        <fieldset>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+        </fieldset>
+        <h3>Are you ready for the exam?</h3>
+        <fieldset>
+            <label for="yes">Yes</label>
+            <input type="radio" name="ready" id="yes">
+        </fieldset>
+        <fieldset>
+            <label for="no">No</label>
+            <input type="radio" name="ready" id="no">
+        </fieldset>
+        <fieldset>
+            <label for="center">Please select your exam center</label>
+            <select name="center" id="center">
+                <option value="select center">Select center</option>
+                <option value="lagos">Lagos</option>
+                <option value="London">London</option>
+                <option value="zaria">Zaria</option>
+                <option value="dubai">Dubai</option>
+                <option value="abuja">Abuja</option>
+            </select>
+        </fieldset>
+    </form>
+
+    <div class="btn">
+        <button class="submit-button">Book Exam</button>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Your examinations has been successfully booked!</h1>
+        </div>
+    </div>
+
+    <footer>
+        <p>COSC 307 &copy; All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
